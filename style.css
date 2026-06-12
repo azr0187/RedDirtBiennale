@@ -1,0 +1,89 @@
+/* Basic reset to make things look consistent across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* A soft, light blue-grey background */
+    background-color: #f0f4f8; 
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    gap: 20px;
+}
+
+header {
+    background-color: #e8b7bc;
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-top: 20px;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #ecf0f1;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content ul.list {
+    margin-top: 0;
+    padding-left: 20px; /* Keeps the bullets neatly aligned inside the box */
+}
+
+/* Adds a tiny bit of space between each list item so it is easier to read */
+.content ul.list li {
+    margin-bottom: 8px;
+}
+
+.logo {
+    max-width: 30%; 
+    height: auto;
+}
