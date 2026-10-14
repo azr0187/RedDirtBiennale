@@ -65,4 +65,64 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener("resize", onScroll);
         updatePanels();
     }
+
+    // Gallery carousel: a scroll-snap track that only moves when the visitor
+    // uses the arrows, the dots, or swipes. It never auto-advances.
+    const carousel = document.querySelector(".carousel");
+
+    if (carousel) {
+        const track = carousel.querySelector(".carousel-track");
+        const slides = track.querySelectorAll(".carousel-slide");
+        const dotsContainer = document.querySelector(".carousel-dots");
+        const dots = [];
+        let current = 0;
+
+        // Wraps around, so "next" on the last image goes back to the first.
+        function goTo(index) {
+            const target = (index + slides.length) % slides.length;
+            current = target;
+            markDots();
+            track.scrollTo({ left: target * track.clientWidth });
+        }
+
+        slides.forEach(function(slide, i) {
+            // Blurred copy of the image that fills the space beside it on
+            // wide screens.
+            const img = slide.querySelector("img");
+            const backdrop = img.cloneNode();
+            backdrop.className = "carousel-backdrop";
+            backdrop.alt = "";
+            backdrop.setAttribute("aria-hidden", "true");
+            slide.insertBefore(backdrop, img);
+
+            const dot = document.createElement("button");
+            dot.type = "button";
+            dot.setAttribute("aria-label", "Go to image " + (i + 1));
+            dot.addEventListener("click", function() {
+                goTo(i);
+            });
+            dotsContainer.appendChild(dot);
+            dots.push(dot);
+        });
+
+        function markDots() {
+            dots.forEach(function(dot, i) {
+                dot.setAttribute("aria-current", i === current ? "true" : "false");
+            });
+        }
+
+        function updateDots() {
+            current = Math.round(track.scrollLeft / track.clientWidth);
+            markDots();
+        }
+
+        carousel.querySelector(".prev").addEventListener("click", function() {
+            goTo(current - 1);
+        });
+        carousel.querySelector(".next").addEventListener("click", function() {
+            goTo(current + 1);
+        });
+        track.addEventListener("scroll", updateDots, { passive: true });
+        updateDots();
+    }
 });
