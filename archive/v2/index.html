@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dirt Biennale</title>
+    <meta name="description" content="RDB ONE — the Camp Hill Red Dirt Biennale. An open-air, day-long biennale across six sites in Camp Hill, Alabama, late fall 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Slim bar that appears once the big wordmark has scrolled away -->
+    <div class="topbar" id="topbar" aria-hidden="true">
+        <a href="#top" class="topbar-name">RDB ONE</a>
+        <nav class="topbar-nav" aria-label="Sections">
+            <a href="camp-hill.html">Why Camp Hill</a>
+            <a href="artists.html">Artists</a>
+            <a href="#sites">Sites</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="https://www.eventbrite.com/e/red-dirt-biennale-tickets-2001650083282" class="topbar-cta" target="_blank" rel="noopener">Reserve your spots</a>
+    </div>
+
+    <header id="top">
+        <!-- Big wordmark: SVG text with textLength so it always spans the full width -->
+        <h1 class="wordmark">
+            <svg viewBox="0 0 1000 175" width="100%" role="img" aria-label="RDB ONE" preserveAspectRatio="none">
+                <text x="0" y="160" textLength="1000" lengthAdjust="spacing" font-size="205" font-weight="700">RDB ONE</text>
+            </svg>
+        </h1>
+
+        <div class="masthead">
+            <nav class="site-nav" aria-label="Menu">
+                <a href="camp-hill.html">Why Camp Hill</a>
+                <a href="artists.html">Artists</a>
+                <a href="#sites">Sites</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <nav class="cta-links" aria-label="Get involved">
+                <a href="https://www.eventbrite.com/e/red-dirt-biennale-tickets-2001650083282" class="cta-btn primary" target="_blank" rel="noopener">Reserve your spots</a>
+                <a href="https://forms.gle/cJ5XA4SZ6VugzJhj7" class="cta-btn secondary" target="_blank" rel="noopener">Volunteer</a>
+            </nav>
+            <p class="masthead-when">
+                <span class="place">Camp Hill, AL</span>
+                <span class="date">November 14th, 9AM–7PM</span>
+            </p>
+        </div>
+    </header>
+
+    <section class="gallery" aria-label="Introduction">
+        <div class="carousel" aria-roledescription="carousel" aria-label="Gallery">
+            <div class="carousel-track" tabindex="0">
+                <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                    <img src="images/1000133748.jpg" alt="Why Camp Hill? Camp Hill is a rural Alabama town where land, faith, agriculture, and community histories meet in powerful and unexpected ways.">
+                </figure>
+                <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+                    <img src="images/1000133749.jpg" alt="What was Camp Hill? In 1898, Camp Hill became home to the Southern Industrial Institute, founded by Lyman Ward to provide practical education and opportunity to underserved rural youth.">
+                </figure>
+                <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+                    <img src="images/1000133750.jpg" alt="Why Now? At a time when rural histories are being forgotten and communities are becoming increasingly unrooted, Camp Hill invites us to remember, reconnect, and imagine new possibilities.">
+                </figure>
+                <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+                    <img src="images/1000133751.jpg" alt="Who are We? We are artists, science communicators, local collaborators, makers, and community members using contemporary art to engage Camp Hill's past, present, and future." loading="lazy">
+                </figure>
+                <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+                    <img src="images/1000133752.jpg" alt="Power in Place: explores how memory, land, identity, and community shape the power we carry and the places we call home." loading="lazy">
+                </figure>
+                <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+                    <img src="images/1000133753.jpg" alt="What is Coming? For one weekend, art installations and public experiences will transform different locations across Camp Hill into spaces for reflection, connection, and imagination." loading="lazy">
+                </figure>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <p class="carousel-count"><span class="carousel-current">1</span> / 6</p>
+            <div class="carousel-dots" role="tablist" aria-label="Choose image"></div>
+            <div class="carousel-arrows">
+                <button class="carousel-btn prev" type="button" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+                </button>
+                <button class="carousel-btn next" type="button" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="facts" aria-label="Key details">
+            <dl>
+                <div>
+                    <dt>Starting point</dt>
+                    <dd>1273 Old 280 Rd<br>Camp Hill, AL 36850<br>United States</dd>
+                </div>
+                <div>
+                    <dt>When</dt>
+                    <dd>November 14, 2026<br>9am–7pm</dd>
+                </div>
+                <div class="facts-schedule">
+                    <dt>Schedule</dt>
+                    <dd>Coming soon!</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="manifesto" id="about" aria-label="About the biennale">
+            <p class="manifesto-equations">
+                DIRT = HISTORY<br>
+                POWER = COMMUNITY<br>
+                POWER = PLACE
+            </p>
+            <p class="manifesto-archive">
+                The dirt is more than soil, it is a living<br>
+                Archive, a record of Memory, a record<br>
+                of Labor, a record of Survival.
+            </p>
+            <div class="manifesto-text">
+                <p>The Camp Hill Red Dirt Biennale emerged from the desire of a group of local artists, citizens, students &amp; educators to establish a weekend devoted to local &amp; regional art, music, culture, and history &ndash; to transform different locations across Camp Hill into places for reflection, connection and imagination.</p>
+                <p>The hope was to invite a new way of looking at a space, and to consider how memory, community, and land shape the power we carry.</p>
+            </div>
+        </section>
+
+        <section class="theme" aria-labelledby="theme-title">
+            <h2 class="theme-title" id="theme-title">Power<br>in Place</h2>
+            <p class="theme-text">How memory, land, identity, and community shape the power we carry and the places we call home.</p>
+        </section>
+
+        <section class="block" id="sites">
+            <div class="block-head">
+                <h2>The sites</h2>
+                <p class="block-note">All venues are arranged in conjunction with local fire departments, with event insurance in tow.</p>
+            </div>
+            <div class="block-body">
+                <ul class="site-list">
+                    <li><h3>The railroad depot</h3></li>
+                    <li><h3>Power + Light</h3></li>
+                    <li><h3>The Universalist church</h3></li>
+                    <li><h3>Camp Hill Town Hall</h3></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="involve" aria-label="Get involved">
+            <nav class="cta-links" aria-label="Get involved">
+                <a href="https://www.eventbrite.com/e/red-dirt-biennale-tickets-2001650083282" class="cta-btn primary" target="_blank" rel="noopener">Reserve your spots</a>
+                <a href="https://forms.gle/cJ5XA4SZ6VugzJhj7" class="cta-btn secondary" target="_blank" rel="noopener">Volunteer</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer-inner">
+        <img src="images/logo-trimmed.png" alt="Red Dirt Biennale" class="logo" width="3840" height="1752">
+        <div class="contact-grid">
+            <div>
+                <h2>Contact</h2>
+            </div>
+            <address>
+                <p class="contact-name">Heidi Carroll</p>
+                <p><a href="mailto:heidiannettecarroll@yahoo.com">heidiannettecarroll@yahoo.com</a></p>
+                <p><a href="tel:+13347033760">(334) 703-3760</a></p>
+            </address>
+            <address>
+                <p class="contact-name">Didimos Johnson Pulikkotil</p>
+                <p><a href="mailto:didimos007@gmail.com">didimos007@gmail.com</a></p>
+                <p><a href="tel:+13343326581">(334) 332-6581</a></p>
+            </address>
+        </div>
+        <p class="colophon">Red Dirt Biennale, Camp Hill, Alabama</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
