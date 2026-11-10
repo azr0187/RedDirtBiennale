@@ -1700,28 +1700,3 @@ body:has(.preview-bar) {
         justify-content: flex-start;
     }
 }
-
-/* Exhibitions open all day: a quieter bar */
-.blk-exhibit,
-.ev-exhibit .ev-bar {
-    background: rgba(191, 64, 40, 0.18);
-    color: var(--red);
-}
-
-.am-no-wheelchair span {
-    color: var(--red);
-}
-
-.loc-note {
-    margin-top: 16px;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    max-width: 36ch;
-}
-
-.loc-note a {
-    color: var(--black);
-    text-decoration: underline;
-    text-decoration-color: rgba(191, 64, 40, 0.5);
-    text-underline-offset: 3px;
-}
